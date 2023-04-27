@@ -81,7 +81,7 @@ namespace AddressBook
                         Console.WriteLine("A address is already on file for {0}", firstName);
                     }
                     break;
-                case "L":
+                case "B":
                     if (book.isEmpty())
                     {
                         Console.WriteLine("There are no entries.");
@@ -93,7 +93,7 @@ namespace AddressBook
                         book.list((a) => Console.WriteLine("First Name: {0}\n Last Name: {1}\n Address: {2}\n City: {3}\n State: {4}\n Zip Code: {5}\n Phone Number: {6}\n Email: {7} \n-------------", a.firstName, a.lastName, a.address, a.city, a.state, a.zip, a.phone, a.email));
                     }
                     break;
-                case "E":
+                case "C":
                     Console.WriteLine("Enter contact name you want to Edit: ");
                     firstName = Console.ReadLine();
                     Address addr = book.find(firstName);
